@@ -6,6 +6,8 @@
 
 @import url(../blocks/header.css);
 
+@import url(../blocks/content.css);
+
 @import url(../blocks/profile.css);
 
 @import url(../blocks/card.css);
@@ -27,7 +29,7 @@
     max-width: 880px;
   }
 
-  .profile__border-line {
+  .content__border-line {
     max-width: 880px;
   }
 
@@ -61,7 +63,7 @@
     height: 33px;
   }
 
-  .profile__border-line {
+  .content__border-line {
     max-width: 581px;
     padding-top: 36px;
   }
@@ -130,7 +132,7 @@
     height: 24px;
   }
 
-  .profile__border-line {
+  .content__border-line {
     max-width: 282px;
     padding-top: 36px;
   }
@@ -200,7 +202,7 @@
     height: 24px;
   }
 
-  .profile__border-line {
+  .content__border-line {
     max-width: 282px;
     padding-top: 36px;
   }

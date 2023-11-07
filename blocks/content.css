@@ -1,0 +1,10 @@
+.content__border-line {
+  position: relative;
+  border-bottom: 1px solid #545454;
+  padding-top: 41px;
+  max-width: 880px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
