@@ -1,8 +1,14 @@
 Comments from Jerome Ward:
 
-1. I Followed the requirements as much as I could, although I expect to hear a lot feedback on the mistakes that I most likely made.
+1. I updated project 3 after the reviewer's inital feedback.
 
-2. I didn't see anything on making hover active on the buttons, so I guess that will be on the next sprint.
+2. I added the hover function on the edit, add, and like buttons.
+
+3. I moved blocks around to the approiate areas and files.
+
+4. I moved the queries to their appropriate files.
+
+5. I removed unnecessary tags, elements and property values.
 
 # Project 3: Around The U.S.
 
