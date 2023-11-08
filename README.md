@@ -1,5 +1,15 @@
 Comments from Jerome Ward:
 
+Second review:
+
+1. Removed borderline tag and add border-bottom attribute.
+
+2. Added cursor pointer to hover elements.
+
+3. Removed unnecessary/repetitive css code throughout.
+
+First review:
+
 1. I updated project 3 after the reviewer's inital feedback.
 
 2. I added the hover function on the edit, add, and like buttons.
