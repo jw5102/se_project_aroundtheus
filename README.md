@@ -1,5 +1,9 @@
 Comments from Jerome Ward:
 
+Fourth review:
+
+1. Removed additional property values that were not needed or didn't conform to BEM guidlines.
+
 Third review:
 
 1. Made all the changes the reviewer pointed out. Most were unnecessary, duplicate property values. I also went through the code to remove additional unnecessary, duplicate property values.

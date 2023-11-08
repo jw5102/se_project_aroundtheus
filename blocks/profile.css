@@ -93,9 +93,7 @@
 
   .profile__title {
     font-size: 22px;
-    font-weight: 500;
-    width: 196px;
-    height: 22px;
+    max-width: 196px;
     text-align: center;
     padding: 26px 0 14px;
     margin: 0;
@@ -139,18 +137,6 @@
 
   .profile__title {
     font-size: 22px;
-    font-weight: 500;
-    width: 196px;
-    height: 22px;
-    text-align: center;
-    margin: 26px 0 14px;
-    padding: 0;
-  }
-
-  .profile__edit-button {
-    width: 18px;
-    height: 18px;
-    margin: 30px 0 10px 15px;
   }
 
   .profile__add-button {
