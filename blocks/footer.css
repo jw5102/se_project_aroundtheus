@@ -7,7 +7,7 @@
 }
 
 .footer__copyright {
-  height: 1.2;
+  line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
   font-family: "Inter", arial, sans-serif;

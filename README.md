@@ -1,5 +1,9 @@
 Comments from Jerome Ward:
 
+Third review:
+
+1. Made all the changes the reviewer pointed out. Most were unnecessary, duplicate property values. I also went through the code to remove additional unnecessary, duplicate property values.
+
 Second review:
 
 1. Removed borderline tag and add border-bottom attribute.
