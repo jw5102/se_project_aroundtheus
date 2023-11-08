@@ -40,10 +40,5 @@
 
 .card__like-button:hover {
   opacity: 50%;
-}
-
-@media screen and (max-width: 637px) {
-  .cards {
-    padding: 0;
-  }
+  cursor: pointer;
 }
