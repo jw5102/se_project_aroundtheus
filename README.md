@@ -1,5 +1,7 @@
 Comments from Jerome Ward:
 
+Sprint 3 Github link: https://github.com/jw5102/se_project_aroundtheus
+
 Fourth review:
 
 1. Removed additional property values that were not needed or didn't conform to BEM guidlines.
