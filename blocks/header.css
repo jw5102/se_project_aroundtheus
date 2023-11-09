@@ -32,10 +32,11 @@
 
 @media screen and (max-width: 320px) {
   .header__image {
+    object-fit: cover;
     width: 126px;
     height: 24px;
-    flex-shrink: 0;
-    padding: 0 0 32px 27px;
+    margin: 0 0 32px 27px;
+    padding: 0;
   }
 
   .header {

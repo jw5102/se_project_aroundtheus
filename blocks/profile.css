@@ -132,7 +132,7 @@
     justify-content: center;
     max-width: 282px;
     font-size: 22px;
-    margin: 0 auto;
+    margin: 0 19px 0;
   }
 
   .profile__title {
@@ -153,12 +153,8 @@
     max-width: 320px;
   }
 
-  .profile__info {
-    margin: 0;
-  }
-
   .profile__image {
-    margin: 38px 101px 0 99px;
+    margin: 38px auto 0 auto;
   }
   .profile__title {
     padding-bottom: 0;
@@ -166,13 +162,17 @@
     height: 22px;
   }
 
+  .profile__edit-button {
+    margin: 30px 0 0 10px;
+  }
+
   .profile__description {
     padding-top: 14px;
-    margin: 0;
+    margin: 0 auto;
     font-size: 14px;
   }
 
   .profile__add-button {
-    margin-top: 36px;
+    margin: 36px 19px 0;
   }
 }
