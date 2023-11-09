@@ -146,3 +146,33 @@
     padding: 0;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .profile {
+    padding: 0;
+    max-width: 320px;
+  }
+
+  .profile__info {
+    margin: 0;
+  }
+
+  .profile__image {
+    margin: 38px 101px 0 99px;
+  }
+  .profile__title {
+    padding-bottom: 0;
+    width: 196px;
+    height: 22px;
+  }
+
+  .profile__description {
+    padding-top: 14px;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .profile__add-button {
+    margin-top: 36px;
+  }
+}
