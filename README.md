@@ -1,6 +1,12 @@
 Comments from Jerome Ward:
 
-Sprint 3 Github link: https://github.com/jw5102/se_project_aroundtheus
+Sprint 3 Github link: https://jw5102.github.io/se_project_aroundtheus
+
+Sixth review:
+
+1. Added correct link to my project.
+
+2. Adjusted the "Profile Description" to match Figma design.
 
 Fifth review:
 

@@ -158,6 +158,7 @@
   }
   .profile__title {
     padding-bottom: 0;
+    margin-left: 28px;
     width: 196px;
     height: 22px;
   }
@@ -170,6 +171,9 @@
     padding-top: 14px;
     margin: 0 auto;
     font-size: 14px;
+    width: 282px;
+    display: inline-block;
+    text-align: center;
   }
 
   .profile__add-button {
