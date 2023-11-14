@@ -2,6 +2,17 @@ Comments from Jerome Ward:
 
 Sprint 4:
 
+Github link to Sprint 4: https://jw5102.github.io/se_project_aroundtheus
+
+Stage 2:
+
+1. Added Modal box.
+2. Added formatting for the elements
+3. Added modal_opener modifier.
+4. Added media query for smaller screen size.
+
+Stage 1:
+
 1. Created the scripts directory.
 2. Created the index.js file.
 3. Added the array of objects in the index.js file, using the cards from the brief.
