@@ -63,6 +63,11 @@
   overflow: hidden;
 }
 
+.modal__name::placeholder {
+  color: #000;
+  font-size: 14px;
+}
+
 .modal__about-me {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -74,6 +79,11 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.modal__about-me::placeholder {
+  color: #000;
+  font-size: 14px;
 }
 
 .modal__button {

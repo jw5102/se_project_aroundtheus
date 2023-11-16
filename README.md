@@ -4,6 +4,13 @@ Sprint 4:
 
 Github link to Sprint 4: https://jw5102.github.io/se_project_aroundtheus
 
+Stage 3:
+
+1. Added the "Edit Button" functionality, so the modal appears when the "Edit Button" is clicked.
+2. Added the "Close Button" functionality, so the modal closes when the "Close Button" is clicked.
+3. Forgot to add the placeholders for the modal inputs in the last stage, so I added them here.
+4. Next stage updates will include adding funtionality for the "Save" and "Add" buttons.
+
 Stage 2:
 
 1. Added Modal box.
