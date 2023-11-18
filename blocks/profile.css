@@ -12,7 +12,7 @@
   grid-template-columns: minmax(auto, 373px) auto;
 }
 
-.profile__title {
+.profile__name {
   font-size: 42px;
   line-height: 1.14;
   font-weight: 500;
@@ -30,7 +30,7 @@
   width: 24px;
   grid-area: button;
   border: 1px solid white;
-  margin: 15px 0 9px 18px;
+  margin: 15px 0 0 18px;
 }
 
 .profile__edit-button:hover {
@@ -91,10 +91,10 @@
     font-size: 22px;
   }
 
-  .profile__title {
+  .profile__name {
     font-size: 22px;
     max-width: 196px;
-    text-align: center;
+    text-align: left;
     padding: 26px 0 14px;
     margin: 0;
   }
@@ -135,7 +135,7 @@
     margin: 0 19px 0;
   }
 
-  .profile__title {
+  .profile__name {
     font-size: 22px;
   }
 
@@ -156,7 +156,7 @@
   .profile__image {
     margin: 38px auto 0 auto;
   }
-  .profile__title {
+  .profile__name {
     padding-bottom: 0;
     margin-left: 28px;
     width: 196px;

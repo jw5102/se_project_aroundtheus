@@ -4,21 +4,33 @@ Sprint 4:
 
 Github link to Sprint 4: https://jw5102.github.io/se_project_aroundtheus
 
-Stage 3:
+Stage 4 of Sprint 4:
+
+1. The modal was updated so the "Name" and "Description" profile elements on the webpage would be shown in the "Name" and "Description" fields of the modal.
+2. Changed the modal so any edits to the "Name" and "Description" inputs would be shown on the website once the "Save" button is clicked and submitted.
+3. Added functionality to prevent the webpage from reloading each time the "Name" and "Description" fields are updated.
+4. Created a template for the cards and cloned it, so they could be remove from the HTML code.
+5. Created variables for the card titles and images to be stored.
+6. Linked the images for the cards and set the "alt text" and "card names".
+7. Returned the HTML element with required data.  
+
+
+
+Stage 3 of Sprint 4:
 
 1. Added the "Edit Button" functionality, so the modal appears when the "Edit Button" is clicked.
 2. Added the "Close Button" functionality, so the modal closes when the "Close Button" is clicked.
 3. Forgot to add the placeholders for the modal inputs in the last stage, so I added them here.
 4. Next stage updates will include adding funtionality for the "Save" and "Add" buttons.
 
-Stage 2:
+Stage 2 of Sprint 4:
 
 1. Added Modal box.
 2. Added formatting for the elements
 3. Added modal_opener modifier.
 4. Added media query for smaller screen size.
 
-Stage 1:
+Stage 1 of Sprint 4:
 
 1. Created the scripts directory.
 2. Created the index.js file.
