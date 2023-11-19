@@ -6,6 +6,20 @@ Github link to Sprint 4: https://jw5102.github.io/se_project_aroundtheus
 
 Stage 4 of Sprint 4:
 
+First Review Changes:
+
+1. Added transitions to all buttons.
+2. Cleaned up borders, margins, widths, heights, sizing and syntax errors.
+3. Added border-box to image.
+4. Cleaned up javascript code to be more concise for opening and populating modal.
+5. Changed and added element tags in html file.
+
+Future Modifications:
+
+1. Go back through code and add some of the things I learned, such as using border-box/box-sizing for images and other areas.
+
+First Submission:
+
 1. The modal was updated so the "Name" and "Description" profile elements on the webpage would be shown in the "Name" and "Description" fields of the modal.
 2. Changed the modal so any edits to the "Name" and "Description" inputs would be shown on the website once the "Save" button is clicked and submitted.
 3. Added functionality to prevent the webpage from reloading each time the "Name" and "Description" fields are updated.

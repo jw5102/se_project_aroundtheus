@@ -5,7 +5,7 @@
   bottom: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 2;
   /*display: flex;*/
   padding: 0 19px;
   display: none;
@@ -17,13 +17,15 @@
 
 .modal__container {
   position: relative;
-  width: 430px;
-  height: 330;
+  max-width: 430px;
+  width: 100%;
+  min-height: 330;
   padding: 36px;
   background-color: #fff;
   margin: auto;
   border-radius: 10px;
-  box-shadow: 0, 0, 25px, 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
 }
 
 .modal__close {
@@ -37,11 +39,13 @@
   background-image: url(../images/Close-Icon.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  transition: ease-in-out 0.5s;
 }
 
 .modal__close:hover {
   opacity: 0.6;
   cursor: pointer;
+  
 }
 
 .modal__form {
@@ -49,11 +53,12 @@
   flex-direction: column;
 }
 
-.modal__name {
+.modal__input {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 0 0 13px;
+  gap: 0 0 13px;
   color: #000;
+  min-height: 27px;
   font-size: 14px;
   font-family: "Inter", arial, sans-serif;
   font-weight: 400;
@@ -63,27 +68,13 @@
   overflow: hidden;
 }
 
-.modal__name::placeholder {
+.modal__input::placeholder {
   color: #000;
   font-size: 14px;
 }
 
-.modal__about-me {
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 0 0 13px;
-  color: #000;
-  font-size: 14px;
-  font-family: "Inter";
-  font-weight: 400;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.modal__about-me::placeholder {
-  color: #000;
-  font-size: 14px;
+.modal__input_about-me {
+  margin-bottom: 0;
 }
 
 .modal__button {
@@ -96,11 +87,14 @@
   font-size: 18px;
   font-family: "Inter";
   font-weight: 400;
+  transition: ease-in-out 0.5s;
+  box-shadow: none;
 }
 
 .modal__button:hover {
   opacity: 0.8;
   cursor: pointer;
+  
 }
 
 .modal__heading {
@@ -118,8 +112,8 @@
   }
 
   .modal__close {
-    width: 36px;
-    height: 36px;
+    width: 26px;
+    height: 26px;
     top: -53px;
     right: 0;
   }

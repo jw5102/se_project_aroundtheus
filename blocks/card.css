@@ -3,11 +3,14 @@
   border-radius: 10px;
   flex-direction: column;
   list-style-type: none;
+  overflow: hidden;
 }
 
 .card__image {
+  object-fit: cover;
   width: 282px;
   height: 282px;
+  
 }
 
 .card__description {
@@ -36,6 +39,7 @@
   width: 21px;
   height: 18px;
   border: none;
+  transition: ease-in-out 0.5s;
 }
 
 .card__like-button:hover {

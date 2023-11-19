@@ -34,7 +34,7 @@ const initialCards = [
 /*                             Elements                                 */
 /* -------------------------------------------------------------------- */
 
-const profileEditButton = document.querySelector("#profile-edit-button");
+const profileEditOpen = document.querySelector("#profile-edit-button");
 const profileEditModal = document.querySelector("#profile-edit-modal");
 const profileEditClose = document.querySelector("#profile-edit-close-button");
 const profileName = document.querySelector("#profile__name");
@@ -48,6 +48,10 @@ const cardTemplate = document.querySelector("#card-template").content.firstEleme
 /* -------------------------------------------------------------------- */
 /*                             Functions                                */
 /* -------------------------------------------------------------------- */
+
+function openPopup() {
+  profileEditModal.classList.add("modal_opened"); 
+}
 
 function closePopup() {
   profileEditModal.classList.remove("modal_opened");
@@ -67,6 +71,12 @@ function getCardElement(cardData) {
 /*                             Event Handlers                           */
 /* -------------------------------------------------------------------- */
 
+function handleProfileEditOpen(event) {
+  profileNameInput.value = profileName.textContent;
+  profileDescriptionInput.value = profileDescription.textContent;
+  openPopup();
+}
+
 function handleProfileEditSubmit(event)  {
   event.preventDefault();
   profileName.textContent = profileNameInput.value;
@@ -78,11 +88,9 @@ function handleProfileEditSubmit(event)  {
 /*                             Event Listeners                          */
 /* -------------------------------------------------------------------- */
 
-profileEditButton.addEventListener("click", () => {
-  profileNameInput.value = profileName.textContent;
-  profileDescriptionInput.value = profileDescription.textContent;  
-  profileEditModal.classList.add("modal_opened");  
-});
+profileEditOpen.addEventListener("click", openPopup);
+
+profileEditOpen.addEventListener("click", handleProfileEditOpen);
 
 profileEditClose.addEventListener("click", closePopup);
 
