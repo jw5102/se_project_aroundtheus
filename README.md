@@ -6,6 +6,12 @@ Github link to Sprint 4: https://jw5102.github.io/se_project_aroundtheus
 
 Stage 4 of Sprint 4:
 
+Second Review Changes:
+
+1. Added .prettierignore file, which I forgot.
+2. Made changes to a couple of element tag names for the modal.
+3. Reset a border for a button in the Modal file.
+
 First Review Changes:
 
 1. Added transitions to all buttons.

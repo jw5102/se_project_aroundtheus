@@ -73,7 +73,7 @@
   font-size: 14px;
 }
 
-.modal__input_about-me {
+.modal__input_type_description {
   margin-bottom: 0;
 }
 
@@ -88,7 +88,7 @@
   font-family: "Inter";
   font-weight: 400;
   transition: ease-in-out 0.5s;
-  box-shadow: none;
+  border: none;
 }
 
 .modal__button:hover {
