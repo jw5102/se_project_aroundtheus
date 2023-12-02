@@ -1,5 +1,6 @@
 .card {
   display: flex;
+  position: relative;
   border-radius: 10px;
   flex-direction: column;
   list-style-type: none;
@@ -10,7 +11,28 @@
   object-fit: cover;
   width: 282px;
   height: 282px;
-  
+   
+}
+
+.card__delete-button {
+  position: absolute;
+  background: url("../images/trash-inactive.svg");
+  width: 18px;
+  height: 19px;
+  border: none;
+  transition: ease-in-out 0.5s;
+  top: 20px;
+  right: 20px;
+    
+}
+
+.card__delete-button_active {
+  background: url("../images/trash-active.svg");
+}
+
+.card__delete-button:hover {
+  background: url("../images/trash-active.svg");
+  cursor: pointer;
 }
 
 .card__description {
@@ -42,7 +64,13 @@
   transition: ease-in-out 0.5s;
 }
 
+.card__like-button_active {
+  background-image: url(../images/like-active.svg);
+ 
+}
+
 .card__like-button:hover {
   opacity: 50%;
   cursor: pointer;
 }
+
