@@ -5,6 +5,16 @@ In this Sprint I added features, which enable a person to add and/or delete card
 
 Github link to Sprint 4: https://jw5102.github.io/se_project_aroundtheus
 
+Second Submission:
+1. Deleted duplicate commands in the cardImageElement and profileEditOpen event listeners.
+2. Refactored the profile edit and add card forms to use the name attribute.
+3. Refactored the add card form to reset it.
+4. Added a universal close modal handler.
+
+Planned updates:
+1. Add feat to validate form inputs.
+
+First Submission:
 1. Add feat to add and delete cards.
 2. Add feat to enable like buttons.
 3. Add feat to preview card images.
