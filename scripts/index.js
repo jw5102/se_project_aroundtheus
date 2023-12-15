@@ -49,6 +49,7 @@ const previewImageElement = document.querySelector(".modal__image-preview");
 const previewCaptionElement = document.querySelector(".modal__caption-preview");
 
 
+
 // Buttons and Other DOM Nodes
 const profileEditOpen = document.querySelector("#profile-edit-button");
 const profileEditClose = profileEditModal.querySelector("#profile-edit-close-button");
@@ -68,11 +69,22 @@ const cardLinkInput = addCardForm.querySelector("#image-link-input");
 /* -------------------------------------------------------------------- */
 
 function openPopup(modal) {
+  document.addEventListener("keydown", keyHandler)
   modal.classList.add("modal_opened");
 }
 
 function closePopup(modal) {
+  document.removeEventListener("keydown", keyHandler)
+  addCardForm.reset();
   modal.classList.remove("modal_opened");
+}
+
+function keyHandler(evt) {
+  const key = evt.key;
+  if (key === "Escape") {
+    const openedModal = document.querySelector('.modal_opened')
+    closePopup(openedModal);
+  }
 }
 
 function renderCard(cardData, wrapper) {
@@ -136,13 +148,28 @@ function handleAddNewCardFormSubmit(evt) {
   closePopup(addCardModal);
 }
 
-// Universal Close Buttons Handler
-closeButtons.forEach((button) => {
-  // find the closest popup 
-  const popupClose = button.closest(".modal");
-  // set the listener
-  button.addEventListener('click', () => closePopup(popupClose));
+[profileEditModal, addCardModal, previewImageModal].forEach((modal) => {
+  document.addEventListener("click", (event) => {
+    if (
+      event.target.classList.contains("modal") ||
+      event.target.classList.contains("modal__close")
+    ) {
+      closePopup(modal);
+    }  
+  });
 });
+
+
+// Universal Close Buttons Handler
+//closeButtons.forEach((button) => {
+  // find the closest popup 
+  //const popupClose = button.closest(".modal");
+  // set the listener
+  //button.addEventListener('click', () => closePopup(popupClose));
+    
+//});
+
+
 
 /* -------------------------------------------------------------------- */
 /*                             Event Listeners                          */

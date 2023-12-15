@@ -24,6 +24,15 @@
   overflow: hidden;
 }
 
+.profile-name-input-error {
+  color: #F00;
+  font-family: Inter;
+  font-size: 12px;
+  width: 164px;
+  height: 12px;
+  opacity: 1;
+}
+
 .profile__edit-button {
   background: transparent url(../images/edit-icon-inactive.svg) center no-repeat;
   height: 24px;

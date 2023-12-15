@@ -85,7 +85,13 @@
   flex-direction: column;
 }
 
+.modal__form-label {
+  position: relative;
+}
+
 .modal__input {
+  display: flex;
+  width: 100%;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   gap: 0 0 13px;
@@ -94,7 +100,6 @@
   font-size: 14px;
   font-family: "Inter", arial, sans-serif;
   font-weight: 400;
-  margin-bottom: 30px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -105,8 +110,41 @@
   font-size: 14px;
 }
 
+.modal__input_type_name {
+  padding: 0 0 5px;
+  margin-bottom: 0;
+}
+
 .modal__input_type_description {
   margin-bottom: 0;
+  margin-top: 30px;
+  padding: 0 0 5px;
+}
+
+.modal__input_type_title {
+  padding: 0 0 5px;
+}
+
+.modal__input_type_link {
+  padding: 0 0 5px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.modal__input:invalid {
+  border-bottom: 1px solid #ff0000;
+}
+
+.modal__error {
+  opacity: 1;
+  color: #ff0000;
+  font-family: "Inter";
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.modal__error_visible {
+  opacity: 1.5;
 }
 
 .modal__button {
@@ -121,6 +159,12 @@
   font-weight: 400;
   transition: ease-in-out 0.5s;
   border: none;
+}
+
+.modal__button_disabled {
+  color: rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2)  
 }
 
 .modal__button:hover {
