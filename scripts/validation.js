@@ -1,11 +1,11 @@
-function showInputError(formElement, inputElement, {inputErrorClass, errorClass}) {
+function showInputError(formElement, inputElement, { inputErrorClass, errorClass }) {
     const errorMessageElement = formElement.querySelector(`#${inputElement.id}-error`);
     inputElement.classList.add(inputErrorClass);
     errorMessageElement.textContent = inputElement.validationMessage;
     errorMessageElement.classList.add(errorClass);
 }
 
-function hideInputError(formElement, inputElement, {inputErrorClass, errorClass}) {
+function hideInputError(formElement, inputElement, { inputErrorClass, errorClass }) {
     const errorMessageElement = formElement.querySelector(`#${inputElement.id}-error`);
     inputElement.classList.remove(inputErrorClass);
     errorMessageElement.textContent = "";
@@ -43,9 +43,9 @@ function toggleButtonState(inputElements, submitButton, {inactiveButtonClass}) {
 }
 
 function setEventListeners(formElement, options) {
-    const {inputSelector} = options;
+    const { inputSelector, submitButtonSelector } = options;
     const inputElements = [...formElement.querySelectorAll(inputSelector)];
-    const submitButton = formElement.querySelector(".modal__button");
+    const submitButton = formElement.querySelector(submitButtonSelector);
     
 
     inputElements.forEach((inputElement) => {

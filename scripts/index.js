@@ -75,7 +75,6 @@ function openPopup(modal) {
 
 function closePopup(modal) {
   document.removeEventListener("keydown", keyHandler)
-  addCardForm.reset();
   modal.classList.remove("modal_opened");
 }
 
@@ -149,7 +148,7 @@ function handleAddNewCardFormSubmit(evt) {
 }
 
 [profileEditModal, addCardModal, previewImageModal].forEach((modal) => {
-  document.addEventListener("click", (event) => {
+  modal.addEventListener("click", (event) => {
     if (
       event.target.classList.contains("modal") ||
       event.target.classList.contains("modal__close")

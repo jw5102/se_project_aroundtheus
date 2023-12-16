@@ -24,7 +24,7 @@
   position: relative;
   max-width: 430px;
   width: 100%;
-  min-height: 330;
+  min-height: 330px;
   padding: 36px;
   background-color: #fff;
   margin: auto;
@@ -94,7 +94,7 @@
   width: 100%;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  gap: 0 0 13px;
+  gap: 13px 0;
   color: #000;
   min-height: 27px;
   font-size: 14px;

@@ -9,6 +9,12 @@ Planned updates:
 1. Add feat to reset validation form inputs.
 2. Add feat to determine additional acceptable inputs for forms, e.g. a spacebar does not count as an input character when validating number of characters.
 
+Second Submission:
+1. Modified the event listener, in the index.js file, to listen for the modal instead of the entire document.
+2. Removed the reset from the closePop function in the index.js file.
+3. Modified the setEventListeners function in the validation.js file to use a const var instead of hardcoding ".modal__button." element.
+
+
 First Submission:
 1. Add feat to use "Esc" key to exit modals.
 2. Add feat to click on overlay to exit modals.
