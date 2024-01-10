@@ -163,7 +163,7 @@
 
 .modal__button_disabled {
   color: rgba(0, 0, 0, 0.2);
-  background-color: transparent;
+  background-color: #f6f6f6;
   border: 1px solid rgba(0, 0, 0, 0.2);  
 }
 
