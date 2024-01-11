@@ -133,6 +133,7 @@ function renderCard(cardData, wrapper) {
 function handleProfileEditOpen(evt) {
   profileNameInput.value = profileName.textContent;
   profileDescriptionInput.value = profileDescription.textContent;
+  editFormValidator.resetValidation();
   openPopup(profileEditModal);
 }
 
@@ -178,7 +179,6 @@ const handleImageClick = (cardData) => {
   previewCaptionElement.textContent = cardData._name;
   openPopup(previewImageModal);
 };
-
 
 /* -------------------------------------------------------------------- */
 /*                             Event Listeners                          */

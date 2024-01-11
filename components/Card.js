@@ -7,32 +7,21 @@ export default class Card {
   }
 
   _setEventListeners() {
-    this._cardElement
-      .querySelector(".card__like-button")
-      .addEventListener("click", () => {
-        this._handleLikeIcon();
-      });
-    this._cardElement
-      .querySelector(".card__delete-button")
-      .addEventListener("click", () => {
-        this._handleDeleteCard();
-      });
+    this._likeBtn.addEventListener("click", this._handleLikeIcon);
+    
+    this._deleteBtn.addEventListener("click", this._handleDeleteCard);
 
-    this._cardElement
-      .querySelector(".card__image")
-      .addEventListener("click", () => {
-        this._handleImageClick(this);
+    this._cardPreviewElement.addEventListener("click", () => {
+      this._handleImageClick(this);
       });
+    }
+  
+  _handleLikeIcon = (evt) => {
+   evt.target.classList.toggle("card__like-button_is-active");
   }
 
-  _handleLikeIcon() {
-    this._cardElement
-      .querySelector(".card__like-button")
-      .classList.toggle("card__like-button_is-active");
-  }
-
-  _handleDeleteCard() {
-    this._cardElement.remove();
+  _handleDeleteCard = (evt) => {
+    evt.target.closest(".card").remove();
     this._cardElement = null;
   }
 
@@ -46,19 +35,17 @@ export default class Card {
 
   getView() {
     this._cardElement = this._getTemplate();
-    this._setEventListeners();
-
-    // Refactor code in the future
-    //this._likeBtn = this._cardElement.querySelector(".card__like-button");
-    //this._deleteBtn = this._cardElement.querySelector(".card__delete-button");
-    //this._cardPreviewElement = this._cardElement.querySelector(".card__image");
-
-    this._cardImageElement = this._cardElement.querySelector(".card__image");
+       
+    this._likeBtn = this._cardElement.querySelector(".card__like-button");
+    this._deleteBtn = this._cardElement.querySelector(".card__delete-button");
+    this._cardPreviewElement = this._cardElement.querySelector(".card__image");
     this._cardTitleElement = this._cardElement.querySelector(".card__title");
 
     this._cardTitleElement.textContent = this._name;
-    this._cardImageElement.src = this._link;
-    this._cardImageElement.alt = this._name;
+    this._cardPreviewElement.src = this._link;
+    this._cardPreviewElement.alt = this._name;
+
+    this._setEventListeners();
 
     return this._cardElement;
   }

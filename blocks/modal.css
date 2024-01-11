@@ -131,7 +131,7 @@
   margin-top: 30px;
 }
 
-.modal__input:invalid {
+.modal__input_type_error:invalid {
   border-bottom: 1px solid #ff0000;
 }
 
@@ -167,9 +167,14 @@
   border: 1px solid rgba(0, 0, 0, 0.2);  
 }
 
-.modal__button:hover {
+.modal__button:hover/*(another way to disable cursor):not(:disabled)*/ {
   opacity: 0.8;
   cursor: pointer;
+}
+
+.modal__button_disabled:hover {
+  opacity: 1;
+  cursor: default;
 }
 
 .modal__heading {
