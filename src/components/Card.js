@@ -16,12 +16,12 @@ export default class Card {
       });
     }
   
-  _handleLikeIcon = (evt) => {
-   evt.target.classList.toggle("card__like-button_is-active");
+  _handleLikeIcon = () => {
+   this._likeBtn.classList.toggle("card__like-button_is-active");
   }
 
-  _handleDeleteCard = (evt) => {
-    evt.target.closest(".card").remove();
+  _handleDeleteCard = () => {
+    this._cardElement.remove();
     this._cardElement = null;
   }
 

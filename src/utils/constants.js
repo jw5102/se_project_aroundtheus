@@ -79,5 +79,3 @@ export const settings = {
     errorClass: "modal__error_visible",
   };
 
-export const editFormElement = profileEditModal.querySelector(".modal__form");
-export const addFormElement = addCardModal.querySelector(".modal__form");

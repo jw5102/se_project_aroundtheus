@@ -4,6 +4,12 @@ Sprint 8:
 
 Github link to Sprint 8: https://jw5102.github.io/se_project_aroundtheus
 
+Second Submission:
+
+1. Got rid of redundant code.
+2. Continued refactoring code.
+3. Modified the handleAddNewCardFormSubmit function to use the collected data, not the inputs.
+
 First Submission:
 
 1. Continued with the refactoring of the Around the U.S. project.
@@ -15,4 +21,3 @@ First Submission:
 5. Refactored and moved code to the appropriate files and exported and imported the necessary classes and elements.
 6. Modified the file structure and moved most the folders and files to the src folder.
 7. Fixed the favicon after the installation of tools and moved it to the images folder.
-
